@@ -71,11 +71,13 @@ function menu(option){
 	if(option == 1){
 		setTitle('فهرست مطالب');
 		$('#wrapper *').on('dragstart', function(event) { event.preventDefault();});
+		/*
 		$('.parallax_section').each(function(){
 		   var $id = $(this).attr('id');
 		   $('#'+$id + ".parallax_section").parallax("50%", -0.30);//0.2//-0.52
 		   //$(this).click(function() {alert();});
 		});
+		*/
 		//myScroll.enable();
 	}
 	else if(option == 2){

@@ -96,7 +96,7 @@
 		$window.bind('scroll', update2).resize(update2);
 		update2();
 	};
-
+	/*
 	$(document).ready(function() {
 		// alert();
 		$('.parallax_section').each(function(){
@@ -106,6 +106,7 @@
 		});
 		// $('.parallax_section').click(function() {alert();});
 	});
+	*/
 	//disable parallax for mobile
 /******************************************************/
 /***************** END PARALLAX SECTIONS **************/
