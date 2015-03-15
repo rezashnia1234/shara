@@ -76,7 +76,7 @@ function menu(option){
 	else if(option == 2){
 		setTitle('قسمت اول');
 		//myScroll.disable();
-		myScroll = new iScroll('wrapper', { hideScrollbar: true });
+		// myScroll = new iScroll('wrapper', { hideScrollbar: true });
 		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 3){
@@ -121,8 +121,8 @@ function menu(option){
 	}
 
 	//Refresh of the iScroll plugin
-	myScroll.refresh();
-	myScroll.scrollTo(0,0);
+	// myScroll.refresh();
+	// myScroll.scrollTo(0,0);
 
 }
 
