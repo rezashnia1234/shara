@@ -46,21 +46,22 @@
 		
 		
 		
-		xpos = (50 * windowWidth)/1189;
-		xpos = 100 - xpos + "%";
-		xpos = "50%";
-		/*
+		xpos = (30 * windowWidth)/1500;
+		xpos = 100 - 30 + "%";
+		// xpos = 100 - xpos + "%";
+		//xpos = "30%";
+		
 		if(windowWidth<1189 && windowWidth>700)
 		{
-			xpos = (50 * windowWidth)/1189;
-			xpos = 100 - xpos + "%";
+			xpos = (30 * windowWidth)/1500;
+			xpos = 100 - 30 + "%";
 		}
 		else if(windowWidth<700)
 		{
-			xpos = (50 * windowWidth)/1189;
-			xpos = 100 - xpos - 10 + "%";
+			xpos = (30 * windowWidth)/1500;
+			xpos = 100 - 70 + "%";
 		}
-		*/
+		
 		
 		// function to be called whenever the window is scrolled or resized
 		function update(){
@@ -100,7 +101,7 @@
 		// alert();
 		$('.parallax_section').each(function(){
 		   var $id = $(this).attr('id');
-		   $('#'+$id + ".parallax_section").parallax("50%", -0.30);//0.2//-0.52
+		   $('#'+$id + ".parallax_section").parallax("30%", -0.30);//0.2//-0.52
 		   //$(this).click(function() {alert();});
 		});
 		// $('.parallax_section').click(function() {alert();});
