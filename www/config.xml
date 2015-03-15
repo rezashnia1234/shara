@@ -5,8 +5,8 @@
         version   = "1.0.10">
 		
 		
-    <name>دندانپزشکی پارسه</name>
-    <description>دندانپزشکی پارسه</description>
+    <name>یه قاچ خنده</name>
+    <description>یه قاچ خنده</description>
     <author href="http://smgroup.ir" email="info@smgroup.ir">Sorush Mehr Rezvan</author>
 		
     <!--
@@ -18,8 +18,8 @@
     <preference name="permissions"                value="none"/>
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="3.6.3" />          <!-- all: current version of PhoneGap -->
-    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="phonegap-version"           value="3.7.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="true" />           <!-- all: hides the status bar at the top of the screen -->
     <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
@@ -42,22 +42,16 @@
     <!-- Plugins -->
 
     <!-- Core plugins -->
-    <gap:plugin name="org.apache.cordova.battery-status" />
-    <gap:plugin name="org.apache.cordova.media-capture" />
     <gap:plugin name="org.apache.cordova.console" />
     <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.device-motion" />
     <gap:plugin name="org.apache.cordova.device-orientation" />
     <gap:plugin name="org.apache.cordova.dialogs" />
-    <gap:plugin name="org.apache.cordova.file" />
-    <gap:plugin name="org.apache.cordova.file-transfer" />
-    <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.globalization" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
 	<gap:plugin name="org.apache.cordova.media" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:plugin name="org.apache.cordova.vibration" />
 
     <!-- Third party plugins -->
     <!-- A list of available plugins are available at https://build.phonegap.com/plugins -->
@@ -98,17 +92,11 @@
 	<gap:splash src="img/splash/splash_bkg_landscape.png" gap:platform="ios" width="2048" height="1536" />
 	-->
     <!-- Define app splash screen for each platform. -->
-    <gap:splash src="images/splash/screen-ldpi-landscape.png"		gap:platform="android" gap:qualifier="port-ldpi" />
-    <gap:splash src="images/splash/screen-mdpi-landscape.png"		gap:platform="android" gap:qualifier="port-mdpi" />
-    <gap:splash src="images/splash/screen-hdpi-landscape.png"		gap:platform="android" gap:qualifier="port-hdpi" />
-    <gap:splash src="images/splash/screen-xhdpi-landscape.png"		gap:platform="android" gap:qualifier="port-xhdpi" />
-    <gap:splash src="images/splash/screen-xxhdpi-landscape.png"		gap:platform="android" gap:qualifier="port-xxhdpi" />
-	
-    <gap:splash src="images/splash/por/screen-ldpi-landscape.png"		gap:platform="android" gap:qualifier="land-ldpi" />
-    <gap:splash src="images/splash/por/screen-mdpi-landscape.png"		gap:platform="android" gap:qualifier="land-mdpi" />
-    <gap:splash src="images/splash/por/screen-hdpi-landscape.png"		gap:platform="android" gap:qualifier="land-hdpi" />
-    <gap:splash src="images/splash/por/screen-xhdpi-landscape.png"		gap:platform="android" gap:qualifier="land-xhdpi" />
-    <gap:splash src="images/splash/por/screen-xxhdpi-landscape.png"		gap:platform="android" gap:qualifier="land-xxhdpi" />
+    <gap:splash src="images/splash/screen-ldpi-landscape.png"		gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="images/splash/screen-mdpi-landscape.png"		gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="images/splash/screen-hdpi-landscape.png"		gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="images/splash/screen-xhdpi-landscape.png"		gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="images/splash/screen-xxhdpi-landscape.png"		gap:platform="android" gap:density="xxhdpi" />
 
 	
     <gap:splash src="images/splash/screen-iphone-landscape.png"			gap:platform="ios"		width="320"		height="480" />
@@ -116,6 +104,9 @@
     <gap:splash src="images/splash/screen-iphone-landscape-568h-2x.png"	gap:platform="ios"		width="640"		height="1136" />
     <gap:splash src="images/splash/screen-ipad-landscape.png"			gap:platform="ios"		width="768"		height="1024" />
     <gap:splash src="images/splash/screen-ipad-landscape-2x.png"		gap:platform="ios"		width="1536"	height="2048" />
+
+
+
 
 
 
