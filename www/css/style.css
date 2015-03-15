@@ -5,7 +5,8 @@
 
 body {
     /*font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;*/
-    font: 16px tahoma;
+    font-size: 16px;
+	font-family:web_Yekan,tahoma;
   	font-weight: 200;
     font-size:14px;
     height:100%;
@@ -337,7 +338,7 @@ div.menu li {
 	font-weight: 200;
 	font-size: 19px;
 	line-height: 19px;
-	margin-bottom: 28px;
+	margin-bottom: 20px;
 
 	-webkit-transition: all 400ms ease-in-out, opacity 1000ms ease;
 	-moz-transition: all 400ms ease-in-out, opacity 1000ms ease;

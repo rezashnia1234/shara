@@ -21,43 +21,32 @@ var app = {
 
 	initialize: function() {
 
-	//Creation of the css class
-	var style = document.createElement('style');
-	style.type = 'text/css';
-	style.innerHTML = '.cssClass { position:absolute; z-index:2; left:0; top:50px; width:100%; height: '+heightBody+'px; overflow:auto;}';
-	document.getElementsByTagName('head')[0].appendChild(style);
+		//Creation of the css class
+		var style = document.createElement('style');
+		style.type = 'text/css';
+		style.innerHTML = '.cssClass { position:absolute; z-index:2; left:0; top:50px; width:100%; height: '+heightBody+'px; overflow:auto;}';
+		document.getElementsByTagName('head')[0].appendChild(style);
 
-	//Add the css class
-	body.className = 'page center';
-	wrapper.className = 'cssClass';
+		//Add the css class
+		body.className = 'page center';
+		wrapper.className = 'cssClass';
 
-	//Add default active class to the menu
-	$( "ul.ulMenu li:nth-child(1)" ).addClass( "active" );
+		//Add default active class to the menu
+		$( "ul.ulMenu li:nth-child(1)" ).addClass( "active" );
 
-	//Load default option
-	xhReq.open("GET", "options/option1.html", false);
-	xhReq.send(null);
-	document.getElementById("sectionContent").innerHTML=xhReq.responseText;
+		//Load default option
+		xhReq.open("GET", "options/option1.html", false);
+		xhReq.send(null);
+		document.getElementById("sectionContent").innerHTML=xhReq.responseText;
 
-	$("#slides").slidesjs({
-    	width: 940,
-    	height: 528,
-		navigation: {
-			active: false
-		},
-		pagination: {
-			active: false
-		},
-		play: { auto: true}
-    });
-	
-	//Creation of the scroll using iScroll plugin
-	//myScroll = new iScroll('wrapper', { hideScrollbar: true });
-	//myScroll.disable();
-	//Add default header title
-	$sectionTitle.text('خانه');
-	localStorage.setItem("code","ubuca");
-
+		
+		//Creation of the scroll using iScroll plugin
+		//myScroll = new iScroll('wrapper', { hideScrollbar: true });
+		//myScroll.disable();
+		//Add default header title
+		$sectionTitle.text('فهرست مطالب');
+		localStorage.setItem("code","ubuca");
+		$('#wrapper *').on('dragstart', function(event) { event.preventDefault();});
 	}
 
 };
@@ -80,41 +69,55 @@ function menu(option){
 	document.getElementById("sectionContent").innerHTML=xhReq.responseText;
 
 	if(option == 1){
-		setTitle('خانه');
-		$btnLocation.hide();
-		$("#slides").slidesjs({
-	    	width: 940,
-	    	height: 528,
-			navigation: {
-				active: false
-			},
-			pagination: {
-				active: false
-			},
-			play: { auto: true}
-    	});
-		myScroll.enable();
+		setTitle('فهرست مطالب');
+		$('#wrapper *').on('dragstart', function(event) { event.preventDefault();});
+		//myScroll.enable();
 	}
 	else if(option == 2){
-		$btnLocation.hide();
-		setTitle('آخرین اخبار');
-		myScroll.enable();
+		setTitle('قسمت اول');
+		//myScroll.disable();
+		myScroll = new iScroll('wrapper', { hideScrollbar: true });
+		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 3){
-		$btnLocation.hide();
-		setTitle('قیمت سهام');
-		myScroll.enable();
+		setTitle('قسمت دوم');
+		//myScroll.disable();
+		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 
 	}
 	else if(option == 4){
-		setTitle('گالری تصاویر');
-		myScroll.disable();
+		setTitle('قسمت سوم');
+		//myScroll.disable();
 		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 5){
-		setTitle('تماس با مـــــا');
-		myScroll.disable();
-		//mapObject.init();
+		setTitle('قسمت چهارم');
+		//myScroll.disable();
+		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+	}
+	else if(option == 6){
+		setTitle('قسمت پنجم');
+		//myScroll.disable();
+		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+	}
+	else if(option == 7){
+		setTitle('قسمت ششم');
+		//myScroll.disable();
+		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+	}
+	else if(option == 8){
+		setTitle('قسمت هفتم');
+		//myScroll.disable();
+		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+	}
+	else if(option == 9){
+		setTitle('قسمت هشتم');
+		//myScroll.disable();
+		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+	}
+	else if(option == 10){
+		setTitle('درباره تولید کننده');
+		//myScroll.disable();
 	}
 
 	//Refresh of the iScroll plugin
