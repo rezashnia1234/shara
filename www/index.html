@@ -9,8 +9,22 @@
 	<link rel="stylesheet" type="text/css" href="css/photoswipe/photoswipe.css" />
     <link rel="stylesheet" type="text/css" href="font/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/yekan.css">
+	<script>
+		function init() {		
+			console.log('SMGROUP ::::::::::::::::::::::::::::::::::::    start init()');
+			document.addEventListener("deviceready", onDeviceReady, false);
+		}
+		function onDeviceReady() {
+			if ( device.platform == 'Android' ){//Android,iOS,win7=WinCE,win8=Win32NT
+				document.addEventListener("backbutton", go_back, false);
+			}
+		}
+		function go_back() {
+			javascript:menu('1');
+		}
+	</script>
 </head>
-<body>
+<body onload="init();">
 
 	<div class="screen">
 		<div class="menu">
