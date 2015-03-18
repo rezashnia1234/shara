@@ -20,8 +20,11 @@
 			}
 		}
 		function go_back() {
-			myPhotoSwipe.hide();
-			javascript:menu('1');
+			if ( $.isFunction(myPhotoSwipe.hide) ) {
+				myPhotoSwipe.hide();
+			}
+			else
+				javascript:menu('1');
 		}
 	</script>
 </head>

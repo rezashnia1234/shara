@@ -84,45 +84,45 @@ function menu(option){
 		setTitle('قسمت اول');
 		//myScroll.disable();
 		// myScroll = new iScroll('wrapper', { hideScrollbar: true });
-		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 		// myPhotoSwipe.show(1);
 		// $('.test').click(function() {myPhotoSwipe.hide();});
 	}
 	else if(option == 3){
 		setTitle('قسمت دوم');
 		//myScroll.disable();
-		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 
 	}
 	else if(option == 4){
 		setTitle('قسمت سوم');
 		//myScroll.disable();
-		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 5){
 		setTitle('قسمت چهارم');
 		//myScroll.disable();
-		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 6){
 		setTitle('قسمت پنجم');
 		//myScroll.disable();
-		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 7){
 		setTitle('قسمت ششم');
 		//myScroll.disable();
-		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 8){
 		setTitle('قسمت هفتم');
 		//myScroll.disable();
-		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 9){
 		setTitle('قسمت هشتم');
 		//myScroll.disable();
-		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 10){
 		setTitle('درباره تولید کننده');
