@@ -21,10 +21,14 @@
 		}
 		function go_back() {
 			if ( $.isFunction(myPhotoSwipe.hide) ) {
+				alert(2);
 				myPhotoSwipe.hide();
 			}
 			else
+			{
+				alert(1);
 				javascript:menu('1');
+			}
 		}
 	</script>
 </head>
