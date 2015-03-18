@@ -85,6 +85,8 @@ function menu(option){
 		//myScroll.disable();
 		// myScroll = new iScroll('wrapper', { hideScrollbar: true });
 		var myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
+		// myPhotoSwipe.show(1);
+		// $('.test').click(function() {myPhotoSwipe.hide();});
 	}
 	else if(option == 3){
 		setTitle('قسمت دوم');
