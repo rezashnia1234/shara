@@ -47,6 +47,7 @@ var app = {
 		$sectionTitle.text('فهرست مطالب');
 		localStorage.setItem("code","ubuca");
 		$('#wrapper *').on('dragstart', function(event) { event.preventDefault();});
+		window.sessionStorage.setItem('session_exit',"1");
 	}
 
 };
@@ -71,6 +72,7 @@ function menu(option){
 	if(option == 1){
 		setTitle('فهرست مطالب');
 		$('#wrapper *').on('dragstart', function(event) { event.preventDefault();});
+		window.sessionStorage.setItem('session_exit',"1");
 		/*
 		$('.parallax_section').each(function(){
 		   var $id = $(this).attr('id');
@@ -82,6 +84,7 @@ function menu(option){
 	}
 	else if(option == 2){
 		setTitle('قسمت اول');
+		window.sessionStorage.setItem('session_exit',"0");
 		//myScroll.disable();
 		// myScroll = new iScroll('wrapper', { hideScrollbar: true });
 		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
@@ -90,43 +93,43 @@ function menu(option){
 	}
 	else if(option == 3){
 		setTitle('قسمت دوم');
-		//myScroll.disable();
+		window.sessionStorage.setItem('session_exit',"0");
 		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 
 	}
 	else if(option == 4){
 		setTitle('قسمت سوم');
-		//myScroll.disable();
+		window.sessionStorage.setItem('session_exit',"0");
 		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 5){
 		setTitle('قسمت چهارم');
-		//myScroll.disable();
+		window.sessionStorage.setItem('session_exit',"0");
 		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 6){
 		setTitle('قسمت پنجم');
-		//myScroll.disable();
+		window.sessionStorage.setItem('session_exit',"0");
 		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 7){
 		setTitle('قسمت ششم');
-		//myScroll.disable();
+		window.sessionStorage.setItem('session_exit',"0");
 		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 8){
 		setTitle('قسمت هفتم');
-		//myScroll.disable();
+		window.sessionStorage.setItem('session_exit',"0");
 		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 9){
 		setTitle('قسمت هشتم');
-		//myScroll.disable();
+		window.sessionStorage.setItem('session_exit',"0");
 		myPhotoSwipe = Code.PhotoSwipe.attach( window.document.querySelectorAll('#Gallery a'), { enableMouseWheel: false , enableKeyboard: false } );
 	}
 	else if(option == 10){
 		setTitle('درباره تولید کننده');
-		//myScroll.disable();
+		window.sessionStorage.setItem('session_exit',"0");
 	}
 
 	//Refresh of the iScroll plugin
